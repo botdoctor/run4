@@ -1,0 +1,456 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { Dumbbell, Shield, TrendingUp, CheckCircle, Target, ArrowRight } from 'lucide-react';
+---
+
+<Layout title="Strength Training for Runners - Run4PRs" description="Runner-specific strength training program to improve performance and prevent injuries. Build power, stability, and resilience.">
+  <Header />
+  <main class="pt-16">
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-br from-green-50 to-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="flex items-center space-x-2 mb-4">
+              <span class="bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full">Ongoing Program</span>
+              <span class="text-3xl font-bold text-green-600">$79</span>
+            </div>
+            <h1 class="font-display font-bold text-4xl sm:text-5xl text-gray-900 mb-6">
+              Strength Training <span class="text-green-600">for Runners</span>
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+              Build the strength, power, and resilience you need to run faster, longer, and injury-free. Our runner-specific strength program targets the muscles and movement patterns that matter most for running performance.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="/cart" class="inline-flex items-center justify-center px-8 py-4 bg-green-600 text-white font-semibold rounded-xl hover:bg-green-700 transition-colors">
+                Start Building Strength
+                <ArrowRight class="ml-2 w-5 h-5" />
+              </a>
+              <a href="#program-details" class="inline-flex items-center justify-center px-8 py-4 bg-white text-green-600 font-semibold rounded-xl border-2 border-green-200 hover:border-green-300 hover:bg-green-50 transition-colors">
+                Learn More
+              </a>
+            </div>
+          </div>
+          <div>
+            <img 
+              src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=800" 
+              alt="Runner doing strength training exercises" 
+              class="rounded-2xl shadow-lg w-full h-[500px] object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Strength Training -->
+    <section class="py-20 bg-white" id="program-details">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-6">Why Runners Need Strength Training</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Strength training isn't just for bodybuilders. It's essential for runners who want to perform at their best and stay injury-free.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <TrendingUp class="w-8 h-8 text-green-600" />
+            </div>
+            <h3 class="font-semibold text-lg text-gray-900 mb-2">Improved Performance</h3>
+            <p class="text-gray-600">Increase power output, running economy, and overall speed through targeted strength work.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <Shield class="w-8 h-8 text-blue-600" />
+            </div>
+            <h3 class="font-semibold text-lg text-gray-900 mb-2">Injury Prevention</h3>
+            <p class="text-gray-600">Strengthen weak links and correct imbalances to reduce injury risk significantly.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <Dumbbell class="w-8 h-8 text-purple-600" />
+            </div>
+            <h3 class="font-semibold text-lg text-gray-900 mb-2">Better Durability</h3>
+            <p class="text-gray-600">Build resilience to handle higher training loads and longer distances.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <Target class="w-8 h-8 text-red-600" />
+            </div>
+            <h3 class="font-semibold text-lg text-gray-900 mb-2">Enhanced Stability</h3>
+            <p class="text-gray-600">Improve core strength and stability for better running form and efficiency.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Program Components -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-6">Program Components</h2>
+          <p class="text-xl text-gray-600">
+            A comprehensive approach to runner-specific strength development.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Core Strength -->
+          <div class="bg-white rounded-2xl shadow-lg p-8">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                <Target class="w-6 h-6 text-green-600" />
+              </div>
+              <h3 class="font-display font-semibold text-xl text-gray-900">Core & Stability</h3>
+            </div>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Anti-rotation exercises</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Plank variations</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Single-leg stability work</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Dynamic balance training</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Lower Body Power -->
+          <div class="bg-white rounded-2xl shadow-lg p-8">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                <TrendingUp class="w-6 h-6 text-blue-600" />
+              </div>
+              <h3 class="font-display font-semibold text-xl text-gray-900">Lower Body Power</h3>
+            </div>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Squats and variations</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Single-leg exercises</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Plyometric training</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Hip strengthening</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Upper Body & Posture -->
+          <div class="bg-white rounded-2xl shadow-lg p-8">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                <Dumbbell class="w-6 h-6 text-purple-600" />
+              </div>
+              <h3 class="font-display font-semibold text-xl text-gray-900">Upper Body & Posture</h3>
+            </div>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Postural strengthening</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Shoulder stability</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Upper back strengthening</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Arm swing mechanics</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Injury Prevention -->
+          <div class="bg-white rounded-2xl shadow-lg p-8">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4">
+                <Shield class="w-6 h-6 text-red-600" />
+              </div>
+              <h3 class="font-display font-semibold text-xl text-gray-900">Injury Prevention</h3>
+            </div>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Glute activation</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Calf strengthening</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">IT band prevention</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Achilles strengthening</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Training Schedule -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-6">Training Schedule</h2>
+          <p class="text-xl text-gray-600">
+            Flexible programming that fits into your running schedule.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Beginner -->
+          <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8">
+            <div class="text-center mb-6">
+              <h3 class="font-display font-semibold text-2xl text-gray-900 mb-2">Beginner</h3>
+              <div class="text-sm text-gray-600">2 sessions per week</div>
+            </div>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">20-30 minute sessions</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Bodyweight exercises</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Form focus</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Progressive loading</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Intermediate -->
+          <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 border-2 border-blue-300">
+            <div class="text-center mb-6">
+              <div class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold mb-2">Most Popular</div>
+              <h3 class="font-display font-semibold text-2xl text-gray-900 mb-2">Intermediate</h3>
+              <div class="text-sm text-gray-600">3 sessions per week</div>
+            </div>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">30-40 minute sessions</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Added resistance</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Plyometric elements</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Sport-specific movements</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Advanced -->
+          <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-8">
+            <div class="text-center mb-6">
+              <h3 class="font-display font-semibold text-2xl text-gray-900 mb-2">Advanced</h3>
+              <div class="text-sm text-gray-600">4+ sessions per week</div>
+            </div>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">40-50 minute sessions</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Complex movements</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Periodized training</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Performance optimization</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-6">Success Stories</h2>
+          <p class="text-xl text-gray-600">
+            See how strength training has transformed our athletes' running.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-2xl shadow-lg p-8">
+            <div class="flex items-center mb-6">
+              <div class="flex">
+                {Array.from({ length: 5 }).map(() => (
+                  <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+            </div>
+            <blockquote class="text-lg text-gray-700 mb-6 italic">
+              "After years of recurring IT band issues, the strength program finally fixed my problems. I'm now running pain-free and faster than ever. The hip strengthening made all the difference!"
+            </blockquote>
+            <div class="flex items-center">
+              <img src="https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=100" alt="David Kim" class="w-12 h-12 rounded-full object-cover mr-4" />
+              <div>
+                <div class="font-semibold text-gray-900">David Kim</div>
+                <div class="text-sm text-gray-600">Marathon Runner</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow-lg p-8">
+            <div class="flex items-center mb-6">
+              <div class="flex">
+                {Array.from({ length: 5 }).map(() => (
+                  <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+            </div>
+            <blockquote class="text-lg text-gray-700 mb-6 italic">
+              "The strength training gave me the power I was missing in my kick. My finishing speed improved dramatically, and I feel so much stronger on hills. Game changer!"
+            </blockquote>
+            <div class="flex items-center">
+              <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Lisa Thompson" class="w-12 h-12 rounded-full object-cover mr-4" />
+              <div>
+                <div class="font-semibold text-gray-900">Lisa Thompson</div>
+                <div class="text-sm text-gray-600">Competitive Runner</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enrollment Form -->
+    <section class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-4">Start Building Strength Today</h2>
+          <p class="text-xl text-gray-600">
+            Join our strength training program and become a stronger, more resilient runner.
+          </p>
+        </div>
+
+        <div class="bg-gray-50 rounded-2xl shadow-lg p-8">
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors" />
+              </div>
+              <div>
+                <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors" />
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors" />
+              </div>
+              <div>
+                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors" />
+              </div>
+            </div>
+            <div>
+              <label for="strengthExperience" class="block text-sm font-medium text-gray-700 mb-2">Strength Training Experience</label>
+              <select id="strengthExperience" name="strengthExperience" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors">
+                <option value="">Select your experience level</option>
+                <option value="beginner">Beginner - New to strength training</option>
+                <option value="some">Some experience - Occasional gym workouts</option>
+                <option value="regular">Regular - Consistent strength training</option>
+                <option value="advanced">Advanced - Experienced with weights</option>
+              </select>
+            </div>
+            <div>
+              <label for="injuries" class="block text-sm font-medium text-gray-700 mb-2">Current or Recent Injuries</label>
+              <textarea id="injuries" name="injuries" rows="3" placeholder="Please describe any current injuries or areas of concern..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors resize-none"></textarea>
+            </div>
+            <div>
+              <label for="goals" class="block text-sm font-medium text-gray-700 mb-2">Strength Training Goals</label>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <label class="flex items-center">
+                  <input type="checkbox" name="goals" value="injury-prevention" class="rounded border-gray-300 text-green-600 focus:ring-green-500" />
+                  <span class="ml-2 text-gray-700">Injury prevention</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" name="goals" value="performance" class="rounded border-gray-300 text-green-600 focus:ring-green-500" />
+                  <span class="ml-2 text-gray-700">Improve performance</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" name="goals" value="power" class="rounded border-gray-300 text-green-600 focus:ring-green-500" />
+                  <span class="ml-2 text-gray-700">Build power</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" name="goals" value="stability" class="rounded border-gray-300 text-green-600 focus:ring-green-500" />
+                  <span class="ml-2 text-gray-700">Improve stability</span>
+                </label>
+              </div>
+            </div>
+            <div>
+              <label for="availability" class="block text-sm font-medium text-gray-700 mb-2">Training Availability</label>
+              <select id="availability" name="availability" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors">
+                <option value="">How many days per week can you train?</option>
+                <option value="2-days">2 days per week</option>
+                <option value="3-days">3 days per week</option>
+                <option value="4-days">4 days per week</option>
+                <option value="5-days">5+ days per week</option>
+              </select>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="inline-flex items-center px-8 py-4 bg-green-600 text-white font-semibold rounded-xl hover:bg-green-700 transition-colors">
+                Join Strength Program - $79
+                <ArrowRight class="ml-2 w-5 h-5" />
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

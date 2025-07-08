@@ -1,0 +1,507 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { Waves, Bike, Play, CheckCircle, Calendar, Target, ArrowRight } from 'lucide-react';
+---
+
+<Layout title="Triathlon Training Plan - Run4PRs" description="Complete 20-week triathlon training program covering swim, bike, and run disciplines. Perfect for first-time triathletes and those seeking to improve.">
+  <Header />
+  <main class="pt-16">
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-br from-blue-50 to-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="flex items-center space-x-2 mb-4">
+              <span class="bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full">20 Weeks</span>
+              <span class="text-3xl font-bold text-blue-600">$199</span>
+            </div>
+            <h1 class="font-display font-bold text-4xl sm:text-5xl text-gray-900 mb-6">
+              Triathlon <span class="text-blue-600">Training Plan</span>
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+              Complete 20-week triathlon training program covering all three disciplines: swim, bike, and run. Whether it's your first triathlon or you're aiming for a personal best, this comprehensive plan will get you race-ready.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="/cart" class="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-colors">
+                Start Training Now
+                <ArrowRight class="ml-2 w-5 h-5" />
+              </a>
+              <a href="#program-details" class="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-xl border-2 border-blue-200 hover:border-blue-300 hover:bg-blue-50 transition-colors">
+                Learn More
+              </a>
+            </div>
+          </div>
+          <div>
+            <img 
+              src="https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?auto=compress&cs=tinysrgb&w=800" 
+              alt="Triathlete swimming, biking, and running" 
+              class="rounded-2xl shadow-lg w-full h-[500px] object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Three Disciplines -->
+    <section class="py-20 bg-white" id="program-details">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-6">Master All Three Disciplines</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Our comprehensive program covers swimming, cycling, and running with structured training for each discipline plus crucial transition practice.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Swimming -->
+          <div class="text-center p-8 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100">
+            <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <Waves class="w-8 h-8 text-white" />
+            </div>
+            <h3 class="font-display font-semibold text-xl text-gray-900 mb-4">Swimming</h3>
+            <ul class="space-y-2 text-gray-600">
+              <li>• Technique development</li>
+              <li>• Endurance building</li>
+              <li>• Open water skills</li>
+              <li>• Sighting and navigation</li>
+              <li>• Wetsuit training</li>
+            </ul>
+          </div>
+
+          <!-- Cycling -->
+          <div class="text-center p-8 rounded-2xl bg-gradient-to-br from-green-50 to-green-100">
+            <div class="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <Bike class="w-8 h-8 text-white" />
+            </div>
+            <h3 class="font-display font-semibold text-xl text-gray-900 mb-4">Cycling</h3>
+            <ul class="space-y-2 text-gray-600">
+              <li>• Power and endurance</li>
+              <li>• Aerodynamic positioning</li>
+              <li>• Hill climbing techniques</li>
+              <li>• Nutrition strategies</li>
+              <li>• Equipment optimization</li>
+            </ul>
+          </div>
+
+          <!-- Running -->
+          <div class="text-center p-8 rounded-2xl bg-gradient-to-br from-red-50 to-red-100">
+            <div class="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <Play class="w-8 h-8 text-white" />
+            </div>
+            <h3 class="font-display font-semibold text-xl text-gray-900 mb-4">Running</h3>
+            <ul class="space-y-2 text-gray-600">
+              <li>• Brick run training</li>
+              <li>• Pace management</li>
+              <li>• Running off the bike</li>
+              <li>• Heat management</li>
+              <li>• Final kick strategies</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Program Features -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-6">What's Included</h2>
+          <p class="text-xl text-gray-600">
+            Everything you need for successful triathlon training and racing.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-2xl shadow-lg p-6">
+            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+              <Calendar class="w-6 h-6 text-blue-600" />
+            </div>
+            <h3 class="font-semibold text-lg text-gray-900 mb-3">20-Week Structured Plan</h3>
+            <p class="text-gray-600">Progressive training schedule with base building, build phases, and race preparation.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow-lg p-6">
+            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+              <Target class="w-6 h-6 text-green-600" />
+            </div>
+            <h3 class="font-semibold text-lg text-gray-900 mb-3">Transition Training</h3>
+            <p class="text-gray-600">Specific brick workouts and transition practice to master T1 and T2 efficiently.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow-lg p-6">
+            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+              <CheckCircle class="w-6 h-6 text-purple-600" />
+            </div>
+            <h3 class="font-semibold text-lg text-gray-900 mb-3">Equipment Guidance</h3>
+            <p class="text-gray-600">Recommendations for bikes, wetsuits, and gear plus setup and maintenance tips.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow-lg p-6">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+              <Waves class="w-6 h-6 text-red-600" />
+            </div>
+            <h3 class="font-semibold text-lg text-gray-900 mb-3">Nutrition Strategy</h3>
+            <p class="text-gray-600">Race-day fueling plans and training nutrition for long-course events.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow-lg p-6">
+            <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+              <Target class="w-6 h-6 text-yellow-600" />
+            </div>
+            <h3 class="font-semibold text-lg text-gray-900 mb-3">Race Strategy</h3>
+            <p class="text-gray-600">Pacing strategies, race-day logistics, and mental preparation techniques.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow-lg p-6">
+            <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+              <Play class="w-6 h-6 text-indigo-600" />
+            </div>
+            <h3 class="font-semibold text-lg text-gray-900 mb-3">Personal Coaching</h3>
+            <p class="text-gray-600">Regular check-ins and personalized adjustments to your training plan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Training Phases -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-6">20-Week Training Phases</h2>
+          <p class="text-xl text-gray-600">
+            Structured progression from base building to race-day readiness.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Base Phase -->
+          <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6">
+            <div class="text-center mb-4">
+              <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-2">
+                <span class="font-bold text-white">1-8</span>
+              </div>
+              <h3 class="font-semibold text-lg text-gray-900">Base Building</h3>
+            </div>
+            <ul class="space-y-2 text-sm text-gray-700">
+              <li>• Aerobic development</li>
+              <li>• Technique focus</li>
+              <li>• Volume progression</li>
+              <li>• Equipment familiarization</li>
+            </ul>
+          </div>
+
+          <!-- Build 1 -->
+          <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6">
+            <div class="text-center mb-4">
+              <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-2">
+                <span class="font-bold text-white">9-12</span>
+              </div>
+              <h3 class="font-semibold text-lg text-gray-900">Build Phase 1</h3>
+            </div>
+            <ul class="space-y-2 text-sm text-gray-700">
+              <li>• Intensity introduction</li>
+              <li>• Threshold training</li>
+              <li>• First brick workouts</li>
+              <li>• Open water practice</li>
+            </ul>
+          </div>
+
+          <!-- Build 2 -->
+          <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6">
+            <div class="text-center mb-4">
+              <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-2">
+                <span class="font-bold text-white">13-16</span>
+              </div>
+              <h3 class="font-semibold text-lg text-gray-900">Build Phase 2</h3>
+            </div>
+            <ul class="space-y-2 text-sm text-gray-700">
+              <li>• Race-specific training</li>
+              <li>• Advanced brick sessions</li>
+              <li>• Transition practice</li>
+              <li>• Nutrition testing</li>
+            </ul>
+          </div>
+
+          <!-- Peak & Race -->
+          <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6">
+            <div class="text-center mb-4">
+              <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-2">
+                <span class="font-bold text-white">17-20</span>
+              </div>
+              <h3 class="font-semibold text-lg text-gray-900">Peak & Race</h3>
+            </div>
+            <ul class="space-y-2 text-sm text-gray-700">
+              <li>• Taper protocol</li>
+              <li>• Race simulation</li>
+              <li>• Final preparations</li>
+              <li>• Race execution</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Distance Options -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-6">Choose Your Distance</h2>
+          <p class="text-xl text-gray-600">
+            Training plans adapted for different triathlon distances.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Sprint -->
+          <div class="bg-white rounded-2xl shadow-lg p-8">
+            <div class="text-center mb-6">
+              <h3 class="font-display font-semibold text-2xl text-gray-900 mb-2">Sprint Distance</h3>
+              <div class="text-sm text-gray-600 mb-4">750m swim • 20K bike • 5K run</div>
+              <div class="text-blue-600 font-semibold">Perfect for beginners</div>
+            </div>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">12-16 week program</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">6-8 hours per week</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Technique emphasis</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Speed development</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Olympic -->
+          <div class="bg-white rounded-2xl shadow-lg p-8 border-2 border-blue-300">
+            <div class="text-center mb-6">
+              <div class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold mb-2">Most Popular</div>
+              <h3 class="font-display font-semibold text-2xl text-gray-900 mb-2">Olympic Distance</h3>
+              <div class="text-sm text-gray-600 mb-4">1.5K swim • 40K bike • 10K run</div>
+              <div class="text-blue-600 font-semibold">Standard distance</div>
+            </div>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">16-20 week program</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">8-12 hours per week</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Endurance focus</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Race strategy</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Half Ironman -->
+          <div class="bg-white rounded-2xl shadow-lg p-8">
+            <div class="text-center mb-6">
+              <h3 class="font-display font-semibold text-2xl text-gray-900 mb-2">Half Ironman</h3>
+              <div class="text-sm text-gray-600 mb-4">1.9K swim • 90K bike • 21K run</div>
+              <div class="text-blue-600 font-semibold">Long course challenge</div>
+            </div>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">20-24 week program</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">12-16 hours per week</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Endurance building</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Nutrition mastery</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-6">Triathlon Success Stories</h2>
+          <p class="text-xl text-gray-600">
+            See how our athletes have conquered their first triathlons and achieved their goals.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
+            <div class="flex items-center mb-6">
+              <div class="flex">
+                {Array.from({ length: 5 }).map(() => (
+                  <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+            </div>
+            <blockquote class="text-lg text-gray-700 mb-6 italic">
+              "Completed my first Olympic distance triathlon! The structured training and transition practice made all the difference. I felt prepared and confident on race day."
+            </blockquote>
+            <div class="flex items-center">
+              <img src="https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Maria Garcia" class="w-12 h-12 rounded-full object-cover mr-4" />
+              <div>
+                <div class="font-semibold text-gray-900">Maria Garcia</div>
+                <div class="text-sm text-gray-600">First-time Triathlete</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8">
+            <div class="flex items-center mb-6">
+              <div class="flex">
+                {Array.from({ length: 5 }).map(() => (
+                  <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+            </div>
+            <blockquote class="text-lg text-gray-700 mb-6 italic">
+              "The program prepared me perfectly for my first Half Ironman. The nutrition strategy and brick workouts were game-changers. Finished strong and loved every minute!"
+            </blockquote>
+            <div class="flex items-center">
+              <img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=100" alt="James Wilson" class="w-12 h-12 rounded-full object-cover mr-4" />
+              <div>
+                <div class="font-semibold text-gray-900">James Wilson</div>
+                <div class="text-sm text-gray-600">Half Ironman Finisher</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enrollment Form -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-4">Ready for Your Triathlon Journey?</h2>
+          <p class="text-xl text-gray-600">
+            Join our comprehensive triathlon program and achieve your multi-sport goals.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg p-8">
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors" />
+              </div>
+              <div>
+                <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors" />
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors" />
+              </div>
+              <div>
+                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors" />
+              </div>
+            </div>
+            <div>
+              <label for="targetDistance" class="block text-sm font-medium text-gray-700 mb-2">Target Distance</label>
+              <select id="targetDistance" name="targetDistance" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                <option value="">Select your target distance</option>
+                <option value="sprint">Sprint Distance (750m/20K/5K)</option>
+                <option value="olympic">Olympic Distance (1.5K/40K/10K)</option>
+                <option value="half-ironman">Half Ironman (1.9K/90K/21K)</option>
+                <option value="full-ironman">Full Ironman (3.8K/180K/42K)</option>
+              </select>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div>
+                <label for="swimExperience" class="block text-sm font-medium text-gray-700 mb-2">Swimming Experience</label>
+                <select id="swimExperience" name="swimExperience" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                  <option value="">Select level</option>
+                  <option value="beginner">Beginner</option>
+                  <option value="intermediate">Intermediate</option>
+                  <option value="advanced">Advanced</option>
+                </select>
+              </div>
+              <div>
+                <label for="bikeExperience" class="block text-sm font-medium text-gray-700 mb-2">Cycling Experience</label>
+                <select id="bikeExperience" name="bikeExperience" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                  <option value="">Select level</option>
+                  <option value="beginner">Beginner</option>
+                  <option value="intermediate">Intermediate</option>
+                  <option value="advanced">Advanced</option>
+                </select>
+              </div>
+              <div>
+                <label for="runExperience" class="block text-sm font-medium text-gray-700 mb-2">Running Experience</label>
+                <select id="runExperience" name="runExperience" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                  <option value="">Select level</option>
+                  <option value="beginner">Beginner</option>
+                  <option value="intermediate">Intermediate</option>
+                  <option value="advanced">Advanced</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label for="triathlonExperience" class="block text-sm font-medium text-gray-700 mb-2">Triathlon Experience</label>
+              <select id="triathlonExperience" name="triathlonExperience" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                <option value="">Select your experience</option>
+                <option value="first-time">This will be my first triathlon</option>
+                <option value="some">I've completed 1-2 triathlons</option>
+                <option value="experienced">I've completed 3+ triathlons</option>
+              </select>
+            </div>
+            <div>
+              <label for="weeklyHours" class="block text-sm font-medium text-gray-700 mb-2">Available Training Hours per Week</label>
+              <select id="weeklyHours" name="weeklyHours" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                <option value="">Select hours per week</option>
+                <option value="6-8">6-8 hours</option>
+                <option value="8-10">8-10 hours</option>
+                <option value="10-12">10-12 hours</option>
+                <option value="12-15">12-15 hours</option>
+                <option value="15+">15+ hours</option>
+              </select>
+            </div>
+            <div>
+              <label for="goals" class="block text-sm font-medium text-gray-700 mb-2">Goals and Additional Information</label>
+              <textarea id="goals" name="goals" rows="4" placeholder="Tell us about your triathlon goals, target race date, and any specific concerns or questions..." required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors resize-none"></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="inline-flex items-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-colors">
+                Join Triathlon Program - $199
+                <ArrowRight class="ml-2 w-5 h-5" />
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

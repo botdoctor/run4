@@ -1,0 +1,422 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { ShoppingCart, Plus, Minus, X, CheckCircle, CreditCard, Shield } from 'lucide-react';
+---
+
+<Layout title="Get Started - Run4PRs" description="Choose your training program and start your journey to achieving your personal records with Run4PRs.">
+  <Header />
+  <main class="pt-16">
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-br from-primary-50 to-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="font-display font-bold text-4xl sm:text-5xl text-gray-900 mb-6">
+          Get <span class="text-primary-600">Started</span>
+        </h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          Choose your training program and take the first step towards achieving your personal records. All programs include personalized coaching and ongoing support.
+        </p>
+      </div>
+    </section>
+
+    <!-- Program Selection -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-4">Choose Your Program</h2>
+          <p class="text-xl text-gray-600">
+            Select the training program that best fits your goals and experience level.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="programs-grid">
+          <!-- Programs will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Shopping Cart -->
+    <section class="py-20 bg-gray-50" id="cart-section" style="display: none;">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-2xl shadow-lg p-8">
+          <div class="flex items-center mb-8">
+            <ShoppingCart class="w-8 h-8 text-primary-600 mr-3" />
+            <h2 class="font-display font-bold text-2xl text-gray-900">Your Cart</h2>
+          </div>
+
+          <div id="cart-items" class="space-y-4 mb-8">
+            <!-- Cart items will be populated by JavaScript -->
+          </div>
+
+          <div class="border-t pt-6">
+            <div class="flex justify-between items-center text-xl font-bold text-gray-900 mb-6">
+              <span>Total:</span>
+              <span id="cart-total">$0</span>
+            </div>
+            <button id="checkout-btn" class="w-full bg-primary-600 text-white font-semibold py-4 rounded-xl hover:bg-primary-700 transition-colors">
+              Proceed to Checkout
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Checkout Form -->
+    <section class="py-20 bg-white" id="checkout-section" style="display: none;">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-4">Complete Your Order</h2>
+          <p class="text-xl text-gray-600">
+            Fill out your information to get started with your training program.
+          </p>
+        </div>
+
+        <div class="bg-gray-50 rounded-2xl shadow-lg p-8">
+          <form id="checkout-form" class="space-y-8">
+            <!-- Personal Information -->
+            <div>
+              <h3 class="font-semibold text-lg text-gray-900 mb-4">Personal Information</h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                  <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" />
+                </div>
+                <div>
+                  <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" />
+                </div>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                <div>
+                  <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                  <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" />
+                </div>
+                <div>
+                  <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Running Information -->
+            <div>
+              <h3 class="font-semibold text-lg text-gray-900 mb-4">Running Information</h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label for="experience" class="block text-sm font-medium text-gray-700 mb-2">Running Experience</label>
+                  <select id="experience" name="experience" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors">
+                    <option value="">Select your experience level</option>
+                    <option value="beginner">Beginner (0-1 years)</option>
+                    <option value="intermediate">Intermediate (1-3 years)</option>
+                    <option value="advanced">Advanced (3+ years)</option>
+                    <option value="competitive">Competitive athlete</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="weeklyMileage" class="block text-sm font-medium text-gray-700 mb-2">Current Weekly Mileage</label>
+                  <select id="weeklyMileage" name="weeklyMileage" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors">
+                    <option value="">Select weekly mileage</option>
+                    <option value="0-10">0-10 miles</option>
+                    <option value="10-20">10-20 miles</option>
+                    <option value="20-30">20-30 miles</option>
+                    <option value="30-40">30-40 miles</option>
+                    <option value="40+">40+ miles</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mt-6">
+                <label for="goals" class="block text-sm font-medium text-gray-700 mb-2">Primary Goals</label>
+                <textarea id="goals" name="goals" rows="3" placeholder="Tell us about your running goals and what you hope to achieve..." required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors resize-none"></textarea>
+              </div>
+            </div>
+
+            <!-- Payment Information -->
+            <div>
+              <h3 class="font-semibold text-lg text-gray-900 mb-4 flex items-center">
+                <CreditCard class="w-5 h-5 mr-2" />
+                Payment Information
+              </h3>
+              <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
+                <div class="flex items-center">
+                  <Shield class="w-5 h-5 text-blue-600 mr-2" />
+                  <span class="text-sm text-blue-800">Your payment information is secure and encrypted</span>
+                </div>
+              </div>
+              <div class="space-y-6">
+                <div>
+                  <label for="cardNumber" class="block text-sm font-medium text-gray-700 mb-2">Card Number</label>
+                  <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" />
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                  <div>
+                    <label for="expiryDate" class="block text-sm font-medium text-gray-700 mb-2">Expiry Date</label>
+                    <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" />
+                  </div>
+                  <div>
+                    <label for="cvv" class="block text-sm font-medium text-gray-700 mb-2">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="123" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" />
+                  </div>
+                </div>
+                <div>
+                  <label for="billingAddress" class="block text-sm font-medium text-gray-700 mb-2">Billing Address</label>
+                  <input type="text" id="billingAddress" name="billingAddress" placeholder="123 Main St, City, State 12345" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="bg-gray-100 rounded-lg p-6">
+              <h3 class="font-semibold text-lg text-gray-900 mb-4">Order Summary</h3>
+              <div id="order-summary" class="space-y-2 mb-4">
+                <!-- Order items will be populated by JavaScript -->
+              </div>
+              <div class="border-t pt-4">
+                <div class="flex justify-between items-center text-xl font-bold text-gray-900">
+                  <span>Total:</span>
+                  <span id="order-total">$0</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Terms and Conditions -->
+            <div class="flex items-start">
+              <input type="checkbox" id="terms" name="terms" required class="mt-1 rounded border-gray-300 text-primary-600 focus:ring-primary-500" />
+              <label for="terms" class="ml-2 text-sm text-gray-700">
+                I agree to the <a href="#" class="text-primary-600 hover:text-primary-700">Terms of Service</a> and <a href="#" class="text-primary-600 hover:text-primary-700">Privacy Policy</a>
+              </label>
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="inline-flex items-center px-8 py-4 bg-primary-600 text-white font-semibold rounded-xl hover:bg-primary-700 transition-colors">
+                <Shield class="w-5 h-5 mr-2" />
+                Complete Order
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<script>
+  // Program data
+  const programs = [
+    {
+      id: 'half-marathon',
+      name: 'Half Marathon Program',
+      price: 99,
+      duration: '12 Weeks',
+      image: 'https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=400',
+      description: 'Complete 12-week training program designed to get you race-ready for your half marathon PR.',
+      features: ['Personalized training schedule', 'Nutrition guidance', 'Race day strategy']
+    },
+    {
+      id: 'speed-training',
+      name: 'Unleash Speed Program',
+      price: 129,
+      duration: '8 Weeks',
+      image: 'https://images.pexels.com/photos/1571939/pexels-photo-1571939.jpeg?auto=compress&cs=tinysrgb&w=400',
+      description: 'Specialized speed and interval training to help you break through plateaus and run faster.',
+      features: ['Advanced interval training', 'VO2 max improvement', 'Speed endurance workouts']
+    },
+    {
+      id: 'strength-training',
+      name: 'Strength Training',
+      price: 79,
+      duration: 'Ongoing',
+      image: 'https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=400',
+      description: 'Runner-specific strength training to improve performance and prevent injuries.',
+      features: ['Injury prevention focus', 'Core stability training', 'Progressive overload system']
+    },
+    {
+      id: 'marathon',
+      name: 'Marathon Program',
+      price: 149,
+      duration: '16 Weeks',
+      image: 'https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=400',
+      description: 'Comprehensive 16-week marathon training program for first-timers and PR seekers.',
+      features: ['Progressive mileage buildup', 'Long run strategies', 'Tapering protocols']
+    },
+    {
+      id: '5k-program',
+      name: '5K Speed Program',
+      price: 69,
+      duration: '6 Weeks',
+      image: 'https://images.pexels.com/photos/1571939/pexels-photo-1571939.jpeg?auto=compress&cs=tinysrgb&w=400',
+      description: 'Intensive 6-week program focused on 5K speed and performance optimization.',
+      features: ['Track workout sessions', 'Tempo run training', 'Race pacing strategies']
+    },
+    {
+      id: 'nutrition',
+      name: 'Nutrition Coaching',
+      price: 149,
+      duration: 'Monthly',
+      image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400',
+      description: 'Personalized nutrition coaching to optimize your running performance and recovery.',
+      features: ['Personalized meal plans', 'Race day nutrition', 'Supplement guidance']
+    }
+  ];
+
+  let cart = [];
+
+  // Render programs
+  function renderPrograms() {
+    const grid = document.getElementById('programs-grid');
+    grid.innerHTML = programs.map(program => `
+      <div class="bg-white border border-gray-200 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+        <img src="${program.image}" alt="${program.name}" class="w-full h-48 object-cover" />
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-3">
+            <span class="bg-primary-100 text-primary-800 text-xs font-semibold px-3 py-1 rounded-full">${program.duration}</span>
+            <span class="text-2xl font-bold text-primary-600">$${program.price}</span>
+          </div>
+          <h3 class="font-display font-semibold text-xl text-gray-900 mb-3">${program.name}</h3>
+          <p class="text-gray-600 mb-4">${program.description}</p>
+          <ul class="space-y-2 mb-6">
+            ${program.features.map(feature => `
+              <li class="flex items-center text-sm text-gray-600">
+                <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                ${feature}
+              </li>
+            `).join('')}
+          </ul>
+          <button onclick="addToCart('${program.id}')" class="w-full bg-primary-600 text-white font-semibold py-3 rounded-lg hover:bg-primary-700 transition-colors">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  // Add to cart
+  function addToCart(programId) {
+    const program = programs.find(p => p.id === programId);
+    const existingItem = cart.find(item => item.id === programId);
+    
+    if (existingItem) {
+      existingItem.quantity += 1;
+    } else {
+      cart.push({ ...program, quantity: 1 });
+    }
+    
+    updateCart();
+    showCart();
+  }
+
+  // Update cart display
+  function updateCart() {
+    const cartItems = document.getElementById('cart-items');
+    const cartTotal = document.getElementById('cart-total');
+    const orderSummary = document.getElementById('order-summary');
+    const orderTotal = document.getElementById('order-total');
+    
+    if (cart.length === 0) {
+      cartItems.innerHTML = '<p class="text-gray-600">Your cart is empty</p>';
+      cartTotal.textContent = '$0';
+      return;
+    }
+    
+    cartItems.innerHTML = cart.map(item => `
+      <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+        <div class="flex items-center">
+          <img src="${item.image}" alt="${item.name}" class="w-16 h-16 rounded-lg object-cover mr-4" />
+          <div>
+            <h4 class="font-semibold text-gray-900">${item.name}</h4>
+            <p class="text-sm text-gray-600">$${item.price} each</p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-3">
+          <button onclick="updateQuantity('${item.id}', ${item.quantity - 1})" class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center hover:bg-gray-300">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          <span class="font-semibold">${item.quantity}</span>
+          <button onclick="updateQuantity('${item.id}', ${item.quantity + 1})" class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center hover:bg-gray-300">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          <button onclick="removeFromCart('${item.id}')" class="w-8 h-8 bg-red-100 text-red-600 rounded-full flex items-center justify-center hover:bg-red-200">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    `).join('');
+    
+    const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    cartTotal.textContent = `$${total}`;
+    
+    // Update order summary
+    if (orderSummary) {
+      orderSummary.innerHTML = cart.map(item => `
+        <div class="flex justify-between">
+          <span>${item.name} x ${item.quantity}</span>
+          <span>$${item.price * item.quantity}</span>
+        </div>
+      `).join('');
+      orderTotal.textContent = `$${total}`;
+    }
+  }
+
+  // Update quantity
+  function updateQuantity(programId, newQuantity) {
+    if (newQuantity <= 0) {
+      removeFromCart(programId);
+      return;
+    }
+    
+    const item = cart.find(item => item.id === programId);
+    if (item) {
+      item.quantity = newQuantity;
+      updateCart();
+    }
+  }
+
+  // Remove from cart
+  function removeFromCart(programId) {
+    cart = cart.filter(item => item.id !== programId);
+    updateCart();
+    
+    if (cart.length === 0) {
+      hideCart();
+    }
+  }
+
+  // Show cart
+  function showCart() {
+    document.getElementById('cart-section').style.display = 'block';
+    document.getElementById('cart-section').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  // Hide cart
+  function hideCart() {
+    document.getElementById('cart-section').style.display = 'none';
+  }
+
+  // Show checkout
+  function showCheckout() {
+    document.getElementById('checkout-section').style.display = 'block';
+    document.getElementById('checkout-section').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  // Handle checkout
+  document.getElementById('checkout-btn')?.addEventListener('click', showCheckout);
+
+  // Handle form submission
+  document.getElementById('checkout-form')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for your order! You will receive a confirmation email shortly.');
+    // Here you would normally process the payment and send the data to your server
+  });
+
+  // Initialize
+  renderPrograms();
+</script>

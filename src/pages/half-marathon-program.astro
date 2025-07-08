@@ -1,0 +1,363 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { Clock, Users, Trophy, CheckCircle, Calendar, Target, ArrowRight } from 'lucide-react';
+---
+
+<Layout title="Half Marathon Program - Run4PRs" description="Complete 12-week half marathon training program designed to help you achieve your personal record. Includes personalized coaching and race day strategy.">
+  <Header />
+  <main class="pt-16">
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-br from-primary-50 to-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="flex items-center space-x-2 mb-4">
+              <span class="bg-primary-100 text-primary-800 text-sm font-semibold px-3 py-1 rounded-full">12 Weeks</span>
+              <span class="text-3xl font-bold text-primary-600">$99</span>
+            </div>
+            <h1 class="font-display font-bold text-4xl sm:text-5xl text-gray-900 mb-6">
+              Half Marathon <span class="text-primary-600">Program</span>
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+              Complete 12-week training program designed to get you race-ready for your half marathon personal record. Whether it's your first half marathon or you're chasing a PR, this program will get you there.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="/cart" class="inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-white font-semibold rounded-xl hover:bg-primary-700 transition-colors">
+                Get Started Now
+                <ArrowRight class="ml-2 w-5 h-5" />
+              </a>
+              <a href="#program-details" class="inline-flex items-center justify-center px-8 py-4 bg-white text-primary-600 font-semibold rounded-xl border-2 border-primary-200 hover:border-primary-300 hover:bg-primary-50 transition-colors">
+                Learn More
+              </a>
+            </div>
+          </div>
+          <div>
+            <img 
+              src="https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=800" 
+              alt="Half marathon runner crossing finish line" 
+              class="rounded-2xl shadow-lg w-full h-[500px] object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Program Features -->
+    <section class="py-20 bg-white" id="program-details">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-6">What's Included</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Everything you need to successfully complete your half marathon and achieve your personal record.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="text-center p-6 rounded-2xl bg-gradient-to-br from-primary-50 to-primary-100">
+            <div class="w-16 h-16 bg-primary-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <Calendar class="w-8 h-8 text-white" />
+            </div>
+            <h3 class="font-semibold text-lg text-gray-900 mb-3">12-Week Training Plan</h3>
+            <p class="text-gray-600">Structured weekly training schedule with progressive mileage buildup and recovery weeks.</p>
+          </div>
+
+          <div class="text-center p-6 rounded-2xl bg-gradient-to-br from-accent-50 to-accent-100">
+            <div class="w-16 h-16 bg-accent-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <Users class="w-8 h-8 text-white" />
+            </div>
+            <h3 class="font-semibold text-lg text-gray-900 mb-3">Personal Coaching</h3>
+            <p class="text-gray-600">One-on-one coaching sessions and personalized feedback on your training progress.</p>
+          </div>
+
+          <div class="text-center p-6 rounded-2xl bg-gradient-to-br from-green-50 to-green-100">
+            <div class="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <Target class="w-8 h-8 text-white" />
+            </div>
+            <h3 class="font-semibold text-lg text-gray-900 mb-3">Race Strategy</h3>
+            <p class="text-gray-600">Detailed race day strategy including pacing, nutrition, and mental preparation.</p>
+          </div>
+
+          <div class="text-center p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100">
+            <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <Trophy class="w-8 h-8 text-white" />
+            </div>
+            <h3 class="font-semibold text-lg text-gray-900 mb-3">Nutrition Guidance</h3>
+            <p class="text-gray-600">Pre-race, during-race, and post-race nutrition strategies for optimal performance.</p>
+          </div>
+
+          <div class="text-center p-6 rounded-2xl bg-gradient-to-br from-purple-50 to-purple-100">
+            <div class="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <Clock class="w-8 h-8 text-white" />
+            </div>
+            <h3 class="font-semibold text-lg text-gray-900 mb-3">Flexible Scheduling</h3>
+            <p class="text-gray-600">Training plans that adapt to your schedule and lifestyle commitments.</p>
+          </div>
+
+          <div class="text-center p-6 rounded-2xl bg-gradient-to-br from-red-50 to-red-100">
+            <div class="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <CheckCircle class="w-8 h-8 text-white" />
+            </div>
+            <h3 class="font-semibold text-lg text-gray-900 mb-3">Injury Prevention</h3>
+            <p class="text-gray-600">Strength training and mobility work to keep you healthy throughout training.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Training Schedule -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-6">Training Schedule Overview</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            A progressive 12-week plan that builds your endurance safely and effectively.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Weeks 1-3 -->
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <div class="text-center mb-4">
+              <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                <span class="font-bold text-primary-600">1-3</span>
+              </div>
+              <h3 class="font-semibold text-lg text-gray-900">Base Building</h3>
+            </div>
+            <ul class="space-y-2 text-sm text-gray-600">
+              <li class="flex items-center">
+                <CheckCircle class="w-4 h-4 text-green-500 mr-2" />
+                15-20 miles per week
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-4 h-4 text-green-500 mr-2" />
+                Easy pace focus
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-4 h-4 text-green-500 mr-2" />
+                Form assessment
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-4 h-4 text-green-500 mr-2" />
+                Strength training intro
+              </li>
+            </ul>
+          </div>
+
+          <!-- Weeks 4-6 -->
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <div class="text-center mb-4">
+              <div class="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                <span class="font-bold text-accent-600">4-6</span>
+              </div>
+              <h3 class="font-semibold text-lg text-gray-900">Build Phase</h3>
+            </div>
+            <ul class="space-y-2 text-sm text-gray-600">
+              <li class="flex items-center">
+                <CheckCircle class="w-4 h-4 text-green-500 mr-2" />
+                25-30 miles per week
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-4 h-4 text-green-500 mr-2" />
+                Tempo runs introduced
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-4 h-4 text-green-500 mr-2" />
+                Long runs up to 8 miles
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-4 h-4 text-green-500 mr-2" />
+                Hill training
+              </li>
+            </ul>
+          </div>
+
+          <!-- Weeks 7-9 -->
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <div class="text-center mb-4">
+              <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                <span class="font-bold text-green-600">7-9</span>
+              </div>
+              <h3 class="font-semibold text-lg text-gray-900">Peak Phase</h3>
+            </div>
+            <ul class="space-y-2 text-sm text-gray-600">
+              <li class="flex items-center">
+                <CheckCircle class="w-4 h-4 text-green-500 mr-2" />
+                30-35 miles per week
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-4 h-4 text-green-500 mr-2" />
+                Speed work sessions
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-4 h-4 text-green-500 mr-2" />
+                Long runs up to 12 miles
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-4 h-4 text-green-500 mr-2" />
+                Race pace practice
+              </li>
+            </ul>
+          </div>
+
+          <!-- Weeks 10-12 -->
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <div class="text-center mb-4">
+              <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                <span class="font-bold text-blue-600">10-12</span>
+              </div>
+              <h3 class="font-semibold text-lg text-gray-900">Taper & Race</h3>
+            </div>
+            <ul class="space-y-2 text-sm text-gray-600">
+              <li class="flex items-center">
+                <CheckCircle class="w-4 h-4 text-green-500 mr-2" />
+                Reduced volume
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-4 h-4 text-green-500 mr-2" />
+                Maintain intensity
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-4 h-4 text-green-500 mr-2" />
+                Race simulation
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-4 h-4 text-green-500 mr-2" />
+                Race day execution
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-6">Success Stories</h2>
+          <p class="text-xl text-gray-600">
+            See what our half marathon program participants have achieved.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl p-8">
+            <div class="flex items-center mb-6">
+              <div class="flex">
+                {Array.from({ length: 5 }).map(() => (
+                  <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+            </div>
+            <blockquote class="text-lg text-gray-700 mb-6 italic">
+              "I completed my first half marathon in 1:52! The program was perfectly structured and the coaching support was incredible. I never felt overwhelmed or undertrained."
+            </blockquote>
+            <div class="flex items-center">
+              <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Jennifer Martinez" class="w-12 h-12 rounded-full object-cover mr-4" />
+              <div>
+                <div class="font-semibold text-gray-900">Jennifer Martinez</div>
+                <div class="text-sm text-gray-600">First-time Half Marathoner</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-br from-accent-50 to-accent-100 rounded-2xl p-8">
+            <div class="flex items-center mb-6">
+              <div class="flex">
+                {Array.from({ length: 5 }).map(() => (
+                  <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+            </div>
+            <blockquote class="text-lg text-gray-700 mb-6 italic">
+              "Shaved 8 minutes off my previous half marathon PR! The race strategy and pacing guidance made all the difference. Highly recommend this program."
+            </blockquote>
+            <div class="flex items-center">
+              <img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Robert Chen" class="w-12 h-12 rounded-full object-cover mr-4" />
+              <div>
+                <div class="font-semibold text-gray-900">Robert Chen</div>
+                <div class="text-sm text-gray-600">PR Seeker</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sign Up Form -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-4">Ready to Start Your Journey?</h2>
+          <p class="text-xl text-gray-600">
+            Join our half marathon program and achieve your personal record in just 12 weeks.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg p-8">
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" />
+              </div>
+              <div>
+                <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" />
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" />
+              </div>
+              <div>
+                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" />
+              </div>
+            </div>
+            <div>
+              <label for="experience" class="block text-sm font-medium text-gray-700 mb-2">Running Experience</label>
+              <select id="experience" name="experience" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors">
+                <option value="">Select your experience level</option>
+                <option value="beginner">Beginner (0-1 years)</option>
+                <option value="intermediate">Intermediate (1-3 years)</option>
+                <option value="advanced">Advanced (3+ years)</option>
+              </select>
+            </div>
+            <div>
+              <label for="previousHalf" class="block text-sm font-medium text-gray-700 mb-2">Previous Half Marathon Experience</label>
+              <select id="previousHalf" name="previousHalf" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors">
+                <option value="">Select your experience</option>
+                <option value="first-time">This will be my first half marathon</option>
+                <option value="completed-one">I've completed 1-2 half marathons</option>
+                <option value="experienced">I've completed 3+ half marathons</option>
+              </select>
+            </div>
+            <div>
+              <label for="goal" class="block text-sm font-medium text-gray-700 mb-2">Goal Time (if applicable)</label>
+              <input type="text" id="goal" name="goal" placeholder="e.g., 1:45:00 or 'Just finish'" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" />
+            </div>
+            <div>
+              <label for="startDate" class="block text-sm font-medium text-gray-700 mb-2">Preferred Start Date</label>
+              <input type="date" id="startDate" name="startDate" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" />
+            </div>
+            <div class="text-center">
+              <button type="submit" class="inline-flex items-center px-8 py-4 bg-primary-600 text-white font-semibold rounded-xl hover:bg-primary-700 transition-colors">
+                Enroll in Program - $99
+                <ArrowRight class="ml-2 w-5 h-5" />
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

@@ -1,0 +1,317 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { Star, Quote, Trophy, Clock, Target } from 'lucide-react';
+---
+
+<Layout title="Testimonials - Run4PRs" description="Read success stories from our athletes who have achieved their personal records with Run4PRs coaching and training programs.">
+  <Header />
+  <main class="pt-16">
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-br from-primary-50 to-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="font-display font-bold text-4xl sm:text-5xl text-gray-900 mb-6">
+          Success <span class="text-primary-600">Stories</span>
+        </h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
+          Don't just take our word for it. Here's what our athletes have to say about their experience with Run4PRs and the results they've achieved.
+        </p>
+        
+        <!-- Stats -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div class="text-center">
+            <div class="text-4xl font-bold text-primary-600 mb-2">500+</div>
+            <div class="text-gray-600">Personal Records Achieved</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-primary-600 mb-2">95%</div>
+            <div class="text-gray-600">Success Rate</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-primary-600 mb-2">4.9/5</div>
+            <div class="text-gray-600">Average Rating</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Testimonials -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Featured Story 1 -->
+          <div class="bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl p-8">
+            <div class="flex items-center mb-6">
+              <Quote class="w-8 h-8 text-primary-600 mr-3" />
+              <div class="flex">
+                {Array.from({ length: 5 }).map(() => (
+                  <Star class="w-5 h-5 text-yellow-400 fill-current" />
+                ))}
+              </div>
+            </div>
+            <blockquote class="text-lg text-gray-700 mb-6 italic">
+              "I never thought I could run a sub-3 hour marathon. The personalized coaching approach and detailed training plan helped me not only achieve this goal but also stay injury-free throughout the entire process. The support from the team was incredible!"
+            </blockquote>
+            <div class="flex items-center">
+              <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Sarah Johnson" class="w-16 h-16 rounded-full object-cover mr-4" />
+              <div>
+                <div class="font-semibold text-gray-900">Sarah Johnson</div>
+                <div class="text-sm text-gray-600">Marathon Runner</div>
+                <div class="flex items-center mt-1">
+                  <Trophy class="w-4 h-4 text-primary-600 mr-1" />
+                  <span class="text-sm text-primary-600 font-medium">2:58:32 Marathon PR</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured Story 2 -->
+          <div class="bg-gradient-to-br from-accent-50 to-accent-100 rounded-2xl p-8">
+            <div class="flex items-center mb-6">
+              <Quote class="w-8 h-8 text-accent-600 mr-3" />
+              <div class="flex">
+                {Array.from({ length: 5 }).map(() => (
+                  <Star class="w-5 h-5 text-yellow-400 fill-current" />
+                ))}
+              </div>
+            </div>
+            <blockquote class="text-lg text-gray-700 mb-6 italic">
+              "The speed training program completely transformed my 5K time. I dropped over 2 minutes in just 8 weeks! The workouts were challenging but perfectly structured, and the coaches provided excellent guidance on pacing and race strategy."
+            </blockquote>
+            <div class="flex items-center">
+              <img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Mike Chen" class="w-16 h-16 rounded-full object-cover mr-4" />
+              <div>
+                <div class="font-semibold text-gray-900">Mike Chen</div>
+                <div class="text-sm text-gray-600">5K Specialist</div>
+                <div class="flex items-center mt-1">
+                  <Clock class="w-4 h-4 text-accent-600 mr-1" />
+                  <span class="text-sm text-accent-600 font-medium">17:45 5K PR</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- All Testimonials Grid -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-4">More Success Stories</h2>
+          <p class="text-xl text-gray-600">
+            Join hundreds of runners who have achieved their goals with Run4PRs.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300">
+            <div class="flex items-center mb-4">
+              <div class="flex mr-2">
+                {Array.from({ length: 5 }).map(() => (
+                  <Star class="w-4 h-4 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <span class="text-sm text-gray-600">5.0</span>
+            </div>
+            <p class="text-gray-700 mb-6 italic">
+              "As a beginner, I was intimidated by running. The coaches made it accessible and fun. Now I'm training for my first half marathon and feeling confident!"
+            </p>
+            <div class="flex items-center">
+              <img src="https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Emily Rodriguez" class="w-12 h-12 rounded-full object-cover mr-3" />
+              <div>
+                <div class="font-semibold text-gray-900">Emily Rodriguez</div>
+                <div class="text-sm text-gray-600">Beginner Runner</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300">
+            <div class="flex items-center mb-4">
+              <div class="flex mr-2">
+                {Array.from({ length: 5 }).map(() => (
+                  <Star class="w-4 h-4 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <span class="text-sm text-gray-600">5.0</span>
+            </div>
+            <p class="text-gray-700 mb-6 italic">
+              "The strength training program has been a game-changer. I'm running faster and haven't had any injuries this season. Highly recommend!"
+            </p>
+            <div class="flex items-center">
+              <img src="https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=100" alt="David Kim" class="w-12 h-12 rounded-full object-cover mr-3" />
+              <div>
+                <div class="font-semibold text-gray-900">David Kim</div>
+                <div class="text-sm text-gray-600">Competitive Runner</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300">
+            <div class="flex items-center mb-4">
+              <div class="flex mr-2">
+                {Array.from({ length: 5 }).map(() => (
+                  <Star class="w-4 h-4 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <span class="text-sm text-gray-600">5.0</span>
+            </div>
+            <p class="text-gray-700 mb-6 italic">
+              "The nutrition coaching completely changed how I fuel my runs. My energy levels are consistent, and my recovery time has improved dramatically."
+            </p>
+            <div class="flex items-center">
+              <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Lisa Thompson" class="w-12 h-12 rounded-full object-cover mr-3" />
+              <div>
+                <div class="font-semibold text-gray-900">Lisa Thompson</div>
+                <div class="text-sm text-gray-600">Marathon Runner</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300">
+            <div class="flex items-center mb-4">
+              <div class="flex mr-2">
+                {Array.from({ length: 5 }).map(() => (
+                  <Star class="w-4 h-4 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <span class="text-sm text-gray-600">5.0</span>
+            </div>
+            <p class="text-gray-700 mb-6 italic">
+              "After years of plateauing, the personalized coaching helped me break through and achieve a new 10K PR. The attention to detail is incredible."
+            </p>
+            <div class="flex items-center">
+              <img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=100" alt="James Wilson" class="w-12 h-12 rounded-full object-cover mr-3" />
+              <div>
+                <div class="font-semibold text-gray-900">James Wilson</div>
+                <div class="text-sm text-gray-600">10K Specialist</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300">
+            <div class="flex items-center mb-4">
+              <div class="flex mr-2">
+                {Array.from({ length: 5 }).map(() => (
+                  <Star class="w-4 h-4 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <span class="text-sm text-gray-600">5.0</span>
+            </div>
+            <p class="text-gray-700 mb-6 italic">
+              "The triathlon program prepared me perfectly for my first Ironman. The structured approach to multi-sport training was exactly what I needed."
+            </p>
+            <div class="flex items-center">
+              <img src="https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Maria Garcia" class="w-12 h-12 rounded-full object-cover mr-3" />
+              <div>
+                <div class="font-semibold text-gray-900">Maria Garcia</div>
+                <div class="text-sm text-gray-600">Triathlete</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 6 -->
+          <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300">
+            <div class="flex items-center mb-4">
+              <div class="flex mr-2">
+                {Array.from({ length: 5 }).map(() => (
+                  <Star class="w-4 h-4 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <span class="text-sm text-gray-600">5.0</span>
+            </div>
+            <p class="text-gray-700 mb-6 italic">
+              "The community aspect is amazing. Training with like-minded runners and having constant support made all the difference in achieving my goals."
+            </p>
+            <div class="flex items-center">
+              <img src="https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Alex Turner" class="w-12 h-12 rounded-full object-cover mr-3" />
+              <div>
+                <div class="font-semibold text-gray-900">Alex Turner</div>
+                <div class="text-sm text-gray-600">Distance Runner</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Share Your Story Form -->
+    <section class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-4">Share Your Success Story</h2>
+          <p class="text-xl text-gray-600">
+            Have you achieved your goals with Run4PRs? We'd love to hear about your journey!
+          </p>
+        </div>
+
+        <div class="bg-gray-50 rounded-2xl shadow-lg p-8">
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" />
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" />
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="program" class="block text-sm font-medium text-gray-700 mb-2">Program Completed</label>
+                <select id="program" name="program" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors">
+                  <option value="">Select program</option>
+                  <option value="5k">5K Speed Program</option>
+                  <option value="half-marathon">Half Marathon Program</option>
+                  <option value="marathon">Marathon Program</option>
+                  <option value="speed">Unleash Speed Program</option>
+                  <option value="strength">Strength Training</option>
+                  <option value="triathlon">Triathlon Plan</option>
+                  <option value="nutrition">Nutrition Coaching</option>
+                </select>
+              </div>
+              <div>
+                <label for="achievement" class="block text-sm font-medium text-gray-700 mb-2">Your Achievement</label>
+                <input type="text" id="achievement" name="achievement" placeholder="e.g., Sub-3 hour marathon, 5K PR" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" />
+              </div>
+            </div>
+            <div>
+              <label for="rating" class="block text-sm font-medium text-gray-700 mb-2">Overall Rating</label>
+              <select id="rating" name="rating" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors">
+                <option value="">Rate your experience</option>
+                <option value="5">5 Stars - Excellent</option>
+                <option value="4">4 Stars - Very Good</option>
+                <option value="3">3 Stars - Good</option>
+                <option value="2">2 Stars - Fair</option>
+                <option value="1">1 Star - Poor</option>
+              </select>
+            </div>
+            <div>
+              <label for="story" class="block text-sm font-medium text-gray-700 mb-2">Your Story</label>
+              <textarea id="story" name="story" rows="6" placeholder="Tell us about your journey, challenges overcome, and how Run4PRs helped you achieve your goals..." required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors resize-none"></textarea>
+            </div>
+            <div class="flex items-center">
+              <input type="checkbox" id="consent" name="consent" required class="rounded border-gray-300 text-primary-600 focus:ring-primary-500" />
+              <label for="consent" class="ml-2 text-sm text-gray-700">
+                I consent to Run4PRs using my testimonial for marketing purposes
+              </label>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="inline-flex items-center px-8 py-4 bg-primary-600 text-white font-semibold rounded-xl hover:bg-primary-700 transition-colors">
+                Submit Your Story
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

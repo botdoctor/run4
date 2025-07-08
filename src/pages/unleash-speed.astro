@@ -1,0 +1,439 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { Zap, Clock, Target, CheckCircle, TrendingUp, ArrowRight } from 'lucide-react';
+---
+
+<Layout title="Unleash Speed Program - Run4PRs" description="Specialized 8-week speed training program to help you break through plateaus and run faster. Advanced interval training and VO2 max improvement.">
+  <Header />
+  <main class="pt-16">
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-br from-accent-50 to-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="flex items-center space-x-2 mb-4">
+              <span class="bg-accent-100 text-accent-800 text-sm font-semibold px-3 py-1 rounded-full">8 Weeks</span>
+              <span class="text-3xl font-bold text-accent-600">$129</span>
+            </div>
+            <h1 class="font-display font-bold text-4xl sm:text-5xl text-gray-900 mb-6">
+              Unleash <span class="text-accent-600">Speed</span> Program
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+              Break through your speed plateaus with our intensive 8-week program. Specialized interval training, VO2 max improvement, and advanced techniques to help you run faster than ever before.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="/cart" class="inline-flex items-center justify-center px-8 py-4 bg-accent-600 text-white font-semibold rounded-xl hover:bg-accent-700 transition-colors">
+                Start Training Now
+                <ArrowRight class="ml-2 w-5 h-5" />
+              </a>
+              <a href="#program-details" class="inline-flex items-center justify-center px-8 py-4 bg-white text-accent-600 font-semibold rounded-xl border-2 border-accent-200 hover:border-accent-300 hover:bg-accent-50 transition-colors">
+                Learn More
+              </a>
+            </div>
+          </div>
+          <div>
+            <img 
+              src="https://images.pexels.com/photos/1571939/pexels-photo-1571939.jpeg?auto=compress&cs=tinysrgb&w=800" 
+              alt="Runner doing speed training on track" 
+              class="rounded-2xl shadow-lg w-full h-[500px] object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Program Benefits -->
+    <section class="py-20 bg-white" id="program-details">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-6">Why Speed Training Works</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Our scientifically-backed approach to speed development will transform your running performance in just 8 weeks.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-accent-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <Zap class="w-8 h-8 text-accent-600" />
+            </div>
+            <h3 class="font-semibold text-lg text-gray-900 mb-2">Increased VO2 Max</h3>
+            <p class="text-gray-600">Improve your body's ability to utilize oxygen for better endurance and speed.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <TrendingUp class="w-8 h-8 text-primary-600" />
+            </div>
+            <h3 class="font-semibold text-lg text-gray-900 mb-2">Lactate Threshold</h3>
+            <p class="text-gray-600">Push your lactate threshold higher to maintain faster paces for longer.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <Target class="w-8 h-8 text-green-600" />
+            </div>
+            <h3 class="font-semibold text-lg text-gray-900 mb-2">Neuromuscular Power</h3>
+            <p class="text-gray-600">Develop explosive power and improve your running economy.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <Clock class="w-8 h-8 text-blue-600" />
+            </div>
+            <h3 class="font-semibold text-lg text-gray-900 mb-2">Speed Endurance</h3>
+            <p class="text-gray-600">Maintain your top speed for longer distances and race situations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Training Components -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-6">Training Components</h2>
+          <p class="text-xl text-gray-600">
+            A comprehensive approach to speed development covering all aspects of fast running.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Interval Training -->
+          <div class="bg-white rounded-2xl shadow-lg p-8">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mr-4">
+                <Zap class="w-6 h-6 text-accent-600" />
+              </div>
+              <h3 class="font-display font-semibold text-xl text-gray-900">Advanced Interval Training</h3>
+            </div>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">400m, 800m, and 1200m repeats</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Pyramid and ladder workouts</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Fartlek and tempo intervals</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Progressive interval sessions</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Speed Endurance -->
+          <div class="bg-white rounded-2xl shadow-lg p-8">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                <Target class="w-6 h-6 text-primary-600" />
+              </div>
+              <h3 class="font-display font-semibold text-xl text-gray-900">Speed Endurance Work</h3>
+            </div>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Threshold pace training</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Cruise intervals</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Tempo runs and time trials</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Race pace simulations</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Neuromuscular Training -->
+          <div class="bg-white rounded-2xl shadow-lg p-8">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                <TrendingUp class="w-6 h-6 text-green-600" />
+              </div>
+              <h3 class="font-display font-semibold text-xl text-gray-900">Neuromuscular Power</h3>
+            </div>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Strides and accelerations</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Hill sprints</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Plyometric exercises</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Form drills</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Recovery & Support -->
+          <div class="bg-white rounded-2xl shadow-lg p-8">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                <Clock class="w-6 h-6 text-blue-600" />
+              </div>
+              <h3 class="font-display font-semibold text-xl text-gray-900">Recovery & Support</h3>
+            </div>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Active recovery sessions</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Mobility and flexibility work</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Injury prevention protocols</span>
+              </li>
+              <li class="flex items-center">
+                <CheckCircle class="w-5 h-5 text-green-500 mr-3" />
+                <span class="text-gray-700">Nutrition for speed training</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Weekly Breakdown -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-6">8-Week Program Breakdown</h2>
+          <p class="text-xl text-gray-600">
+            Progressive speed development with carefully planned intensity and recovery.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Weeks 1-2 -->
+          <div class="bg-gradient-to-br from-accent-50 to-accent-100 rounded-xl p-6">
+            <div class="text-center mb-4">
+              <div class="w-12 h-12 bg-accent-600 rounded-full flex items-center justify-center mx-auto mb-2">
+                <span class="font-bold text-white">1-2</span>
+              </div>
+              <h3 class="font-semibold text-lg text-gray-900">Foundation</h3>
+            </div>
+            <ul class="space-y-2 text-sm text-gray-700">
+              <li>• Speed endurance base</li>
+              <li>• Form assessment</li>
+              <li>• Basic intervals</li>
+              <li>• Neuromuscular activation</li>
+            </ul>
+          </div>
+
+          <!-- Weeks 3-4 -->
+          <div class="bg-gradient-to-br from-primary-50 to-primary-100 rounded-xl p-6">
+            <div class="text-center mb-4">
+              <div class="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-2">
+                <span class="font-bold text-white">3-4</span>
+              </div>
+              <h3 class="font-semibold text-lg text-gray-900">Development</h3>
+            </div>
+            <ul class="space-y-2 text-sm text-gray-700">
+              <li>• Increased intensity</li>
+              <li>• Lactate threshold work</li>
+              <li>• Hill training</li>
+              <li>• Power development</li>
+            </ul>
+          </div>
+
+          <!-- Weeks 5-6 -->
+          <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6">
+            <div class="text-center mb-4">
+              <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-2">
+                <span class="font-bold text-white">5-6</span>
+              </div>
+              <h3 class="font-semibold text-lg text-gray-900">Peak</h3>
+            </div>
+            <ul class="space-y-2 text-sm text-gray-700">
+              <li>• Maximum intensity</li>
+              <li>• VO2 max sessions</li>
+              <li>• Speed endurance</li>
+              <li>• Race simulation</li>
+            </ul>
+          </div>
+
+          <!-- Weeks 7-8 -->
+          <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6">
+            <div class="text-center mb-4">
+              <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-2">
+                <span class="font-bold text-white">7-8</span>
+              </div>
+              <h3 class="font-semibold text-lg text-gray-900">Integration</h3>
+            </div>
+            <ul class="space-y-2 text-sm text-gray-700">
+              <li>• Speed maintenance</li>
+              <li>• Time trials</li>
+              <li>• Race preparation</li>
+              <li>• Performance testing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results & Testimonials -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-6">Real Results</h2>
+          <p class="text-xl text-gray-600">
+            See the speed improvements our athletes have achieved in just 8 weeks.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div class="text-center">
+            <div class="text-4xl font-bold text-accent-600 mb-2">2:15</div>
+            <div class="text-gray-600">Average 5K improvement</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-accent-600 mb-2">15%</div>
+            <div class="text-gray-600">VO2 max increase</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-accent-600 mb-2">92%</div>
+            <div class="text-gray-600">Achieve speed goals</div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-2xl shadow-lg p-8">
+            <div class="flex items-center mb-6">
+              <div class="flex">
+                {Array.from({ length: 5 }).map(() => (
+                  <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+            </div>
+            <blockquote class="text-lg text-gray-700 mb-6 italic">
+              "Dropped my 5K time from 22:30 to 19:45 in just 8 weeks! The interval training was challenging but incredibly effective. Best investment I've made in my running."
+            </blockquote>
+            <div class="flex items-center">
+              <img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Mike Chen" class="w-12 h-12 rounded-full object-cover mr-4" />
+              <div>
+                <div class="font-semibold text-gray-900">Mike Chen</div>
+                <div class="text-sm text-gray-600">5K Specialist</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow-lg p-8">
+            <div class="flex items-center mb-6">
+              <div class="flex">
+                {Array.from({ length: 5 }).map(() => (
+                  <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+            </div>
+            <blockquote class="text-lg text-gray-700 mb-6 italic">
+              "Finally broke through my 10K plateau! The program taught me how to train at different intensities and my race times improved dramatically. Highly recommend!"
+            </blockquote>
+            <div class="flex items-center">
+              <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Sarah Johnson" class="w-12 h-12 rounded-full object-cover mr-4" />
+              <div>
+                <div class="font-semibold text-gray-900">Sarah Johnson</div>
+                <div class="text-sm text-gray-600">10K Runner</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enrollment Form -->
+    <section class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-4">Ready to Unleash Your Speed?</h2>
+          <p class="text-xl text-gray-600">
+            Join our intensive 8-week program and discover how fast you can really run.
+          </p>
+        </div>
+
+        <div class="bg-gray-50 rounded-2xl shadow-lg p-8">
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-colors" />
+              </div>
+              <div>
+                <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-colors" />
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-colors" />
+              </div>
+              <div>
+                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-colors" />
+              </div>
+            </div>
+            <div>
+              <label for="currentPR" class="block text-sm font-medium text-gray-700 mb-2">Current Personal Records</label>
+              <textarea id="currentPR" name="currentPR" rows="3" placeholder="Please share your current 5K, 10K, or other race times..." required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-colors resize-none"></textarea>
+            </div>
+            <div>
+              <label for="speedGoals" class="block text-sm font-medium text-gray-700 mb-2">Speed Goals</label>
+              <textarea id="speedGoals" name="speedGoals" rows="3" placeholder="What speed goals do you want to achieve? (e.g., sub-20 5K, break 40 minutes 10K)" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-colors resize-none"></textarea>
+            </div>
+            <div>
+              <label for="trainingBackground" class="block text-sm font-medium text-gray-700 mb-2">Speed Training Experience</label>
+              <select id="trainingBackground" name="trainingBackground" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-colors">
+                <option value="">Select your experience</option>
+                <option value="beginner">New to speed training</option>
+                <option value="some">Some interval training experience</option>
+                <option value="experienced">Experienced with track workouts</option>
+                <option value="advanced">Advanced speed training background</option>
+              </select>
+            </div>
+            <div>
+              <label for="weeklyMileage" class="block text-sm font-medium text-gray-700 mb-2">Current Weekly Mileage</label>
+              <select id="weeklyMileage" name="weeklyMileage" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-colors">
+                <option value="">Select weekly mileage</option>
+                <option value="15-25">15-25 miles</option>
+                <option value="25-35">25-35 miles</option>
+                <option value="35-45">35-45 miles</option>
+                <option value="45+">45+ miles</option>
+              </select>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="inline-flex items-center px-8 py-4 bg-accent-600 text-white font-semibold rounded-xl hover:bg-accent-700 transition-colors">
+                Enroll in Speed Program - $129
+                <ArrowRight class="ml-2 w-5 h-5" />
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
