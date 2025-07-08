@@ -5,18 +5,6 @@ export default {
     extend: {
       colors: {
         primary: {
-          50: '#fef9f9',
-          100: '#feeef2',
-          200: '#fcd5e5',
-          300: '#fbafd0',
-          400: '#f978aa',
-          500: '#f64d8d',
-          600: '#e93d7d',
-          700: '#d92d6c',
-          800: '#c01e5c',
-          900: '#a01a4c',
-        },
-        accent: {
           50: '#fef7ee',
           100: '#fdedd3',
           200: '#fde68a',
@@ -27,6 +15,18 @@ export default {
           700: '#b45309',
           800: '#92400e',
           900: '#78350f',
+        },
+        accent: {
+          50: '#fef9f9',
+          100: '#feeef2',
+          200: '#fcd5e5',
+          300: '#fbafd0',
+          400: '#f978aa',
+          500: '#f64d8d',
+          600: '#e93d7d',
+          700: '#d92d6c',
+          800: '#c01e5c',
+          900: '#a01a4c',
         }
       },
       fontFamily: {
