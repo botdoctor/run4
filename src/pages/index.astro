@@ -1,0 +1,227 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Footer from '../components/Footer.astro';
+import { ArrowRight, Clock, Users, Trophy, Star, CheckCircle } from 'lucide-react';
+---
+
+<Layout title="Run4PRs - Professional Running Coaching & Training Programs">
+  <Header />
+  <main class="pt-16">
+    <Hero />
+    
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-4">
+            Why Choose Run4PRs?
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Our comprehensive approach combines personalized coaching, proven training methods, and ongoing support to help you achieve your running goals.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center p-8 rounded-2xl bg-gradient-to-br from-primary-50 to-primary-100 hover:shadow-lg transition-all duration-300">
+            <div class="w-16 h-16 bg-primary-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <Users class="w-8 h-8 text-white" />
+            </div>
+            <h3 class="font-display font-semibold text-xl text-gray-900 mb-4">Personalized Coaching</h3>
+            <p class="text-gray-600">
+              Get one-on-one coaching tailored to your specific goals, fitness level, and schedule. Our expert coaches provide personalized training plans and ongoing support.
+            </p>
+          </div>
+
+          <div class="text-center p-8 rounded-2xl bg-gradient-to-br from-accent-50 to-accent-100 hover:shadow-lg transition-all duration-300">
+            <div class="w-16 h-16 bg-accent-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <Trophy class="w-8 h-8 text-white" />
+            </div>
+            <h3 class="font-display font-semibold text-xl text-gray-900 mb-4">Proven Results</h3>
+            <p class="text-gray-600">
+              Our training methods have helped over 1000 athletes achieve their personal records and reach their running goals across all distances.
+            </p>
+          </div>
+
+          <div class="text-center p-8 rounded-2xl bg-gradient-to-br from-green-50 to-green-100 hover:shadow-lg transition-all duration-300">
+            <div class="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <Clock class="w-8 h-8 text-white" />
+            </div>
+            <h3 class="font-display font-semibold text-xl text-gray-900 mb-4">Flexible Programs</h3>
+            <p class="text-gray-600">
+              Choose from various training programs designed to fit your lifestyle, from beginner-friendly plans to advanced competitive training.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-4">
+            Training Programs
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Discover our comprehensive range of training programs designed for runners of all levels and goals.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Half Marathon Program -->
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <img src="https://images.pexels.com/photos/2402777/pexels-photo-2402777.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Half Marathon Training" class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <h3 class="font-display font-semibold text-xl text-gray-900 mb-3">Half Marathon Program</h3>
+              <p class="text-gray-600 mb-4">Complete 12-week training program designed to get you race-ready for your half marathon PR.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-2xl font-bold text-primary-600">$99</span>
+                <a href="/half-marathon-program" class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium">
+                  Learn More <ArrowRight class="ml-1 w-4 h-4" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Speed Training -->
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <img src="https://images.pexels.com/photos/1571939/pexels-photo-1571939.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Speed Training" class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <h3 class="font-display font-semibold text-xl text-gray-900 mb-3">Unleash Speed Program</h3>
+              <p class="text-gray-600 mb-4">Specialized speed and interval training to help you break through plateaus and run faster.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-2xl font-bold text-primary-600">$129</span>
+                <a href="/unleash-speed" class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium">
+                  Learn More <ArrowRight class="ml-1 w-4 h-4" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Strength Training -->
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <img src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Strength Training" class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <h3 class="font-display font-semibold text-xl text-gray-900 mb-3">Strength Training</h3>
+              <p class="text-gray-600 mb-4">Runner-specific strength training to improve performance and prevent injuries.</p>
+              <div class="flex items-center justify-between">
+                <span class="text-2xl font-bold text-primary-600">$79</span>
+                <a href="/strength-training" class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium">
+                  Learn More <ArrowRight class="ml-1 w-4 h-4" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <a href="/training-1" class="inline-flex items-center px-8 py-4 bg-primary-600 text-white font-semibold rounded-xl hover:bg-primary-700 transition-colors">
+            View All Programs
+            <ArrowRight class="ml-2 w-5 h-5" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-gray-900 mb-4">
+            What Our Athletes Say
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Don't just take our word for it. Here's what our athletes have to say about their experience with Run4PRs.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-all duration-300">
+            <div class="flex items-center mb-4">
+              {Array.from({ length: 5 }).map(() => (
+                <Star class="w-5 h-5 text-yellow-400 fill-current" />
+              ))}
+            </div>
+            <p class="text-gray-700 mb-6 italic">
+              "The personalized coaching approach helped me achieve my first sub-3 hour marathon. The support and guidance were incredible!"
+            </p>
+            <div class="flex items-center">
+              <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Sarah Johnson" class="w-12 h-12 rounded-full object-cover mr-4" />
+              <div>
+                <div class="font-semibold text-gray-900">Sarah Johnson</div>
+                <div class="text-sm text-gray-600">Marathon Runner</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-all duration-300">
+            <div class="flex items-center mb-4">
+              {Array.from({ length: 5 }).map(() => (
+                <Star class="w-5 h-5 text-yellow-400 fill-current" />
+              ))}
+            </div>
+            <p class="text-gray-700 mb-6 italic">
+              "The speed training program transformed my 5K time. I dropped over 2 minutes in just 8 weeks!"
+            </p>
+            <div class="flex items-center">
+              <img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Mike Chen" class="w-12 h-12 rounded-full object-cover mr-4" />
+              <div>
+                <div class="font-semibold text-gray-900">Mike Chen</div>
+                <div class="text-sm text-gray-600">5K Specialist</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-all duration-300">
+            <div class="flex items-center mb-4">
+              {Array.from({ length: 5 }).map(() => (
+                <Star class="w-5 h-5 text-yellow-400 fill-current" />
+              ))}
+            </div>
+            <p class="text-gray-700 mb-6 italic">
+              "As a beginner, I was intimidated by running. The coaches made it accessible and fun. Now I'm training for my first half marathon!"
+            </p>
+            <div class="flex items-center">
+              <img src="https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Emily Rodriguez" class="w-12 h-12 rounded-full object-cover mr-4" />
+              <div>
+                <div class="font-semibold text-gray-900">Emily Rodriguez</div>
+                <div class="text-sm text-gray-600">Beginner Runner</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <a href="/testimonials" class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium text-lg">
+            Read More Testimonials
+            <ArrowRight class="ml-2 w-5 h-5" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-br from-primary-600 to-primary-800">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="font-display font-bold text-3xl sm:text-4xl text-white mb-6">
+          Ready to Achieve Your Personal Records?
+        </h2>
+        <p class="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+          Join thousands of runners who have transformed their performance with our proven coaching methods and personalized training programs.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/cart" class="inline-flex items-center justify-center px-8 py-4 bg-white text-primary-600 font-semibold rounded-xl hover:bg-gray-50 transition-colors">
+            Start Your Journey
+            <ArrowRight class="ml-2 w-5 h-5" />
+          </a>
+          <a href="/about" class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-xl hover:bg-white hover:text-primary-600 transition-colors">
+            Learn More About Us
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
