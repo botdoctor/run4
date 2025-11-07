@@ -9,10 +9,10 @@ import { Star, Quote, Trophy, Clock, Target } from 'lucide-react';
   <Header />
   <main class="pt-16">
     <!-- Hero Section -->
-    <section class="py-20 bg-gradient-to-br from-primary-50 to-white">
+    <section class="py-20 bg-gradient-to-br from-yellow-50 to-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="font-display font-bold text-4xl sm:text-5xl text-gray-900 mb-6">
-          Success <span class="text-primary-600">Stories</span>
+          Success <span class="text-yellow-600">Stories</span>
         </h1>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
           Don't just take our word for it. Here's what our athletes have to say about their experience with Run4PRs and the results they've achieved.
@@ -21,15 +21,15 @@ import { Star, Quote, Trophy, Clock, Target } from 'lucide-react';
         <!-- Stats -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <div class="text-center">
-            <div class="text-4xl font-bold text-primary-600 mb-2">500+</div>
+            <div class="text-4xl font-bold text-yellow-600 mb-2">500+</div>
             <div class="text-gray-600">Personal Records Achieved</div>
           </div>
           <div class="text-center">
-            <div class="text-4xl font-bold text-primary-600 mb-2">95%</div>
+            <div class="text-4xl font-bold text-yellow-600 mb-2">95%</div>
             <div class="text-gray-600">Success Rate</div>
           </div>
           <div class="text-center">
-            <div class="text-4xl font-bold text-primary-600 mb-2">4.9/5</div>
+            <div class="text-4xl font-bold text-yellow-600 mb-2">4.9/5</div>
             <div class="text-gray-600">Average Rating</div>
           </div>
         </div>
@@ -41,9 +41,9 @@ import { Star, Quote, Trophy, Clock, Target } from 'lucide-react';
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <!-- Featured Story 1 -->
-          <div class="bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl p-8">
+          <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-2xl p-8">
             <div class="flex items-center mb-6">
-              <Quote class="w-8 h-8 text-primary-600 mr-3" />
+              <Quote class="w-8 h-8 text-yellow-600 mr-3" />
               <div class="flex">
                 {Array.from({ length: 5 }).map(() => (
                   <Star class="w-5 h-5 text-yellow-400 fill-current" />
@@ -59,17 +59,17 @@ import { Star, Quote, Trophy, Clock, Target } from 'lucide-react';
                 <div class="font-semibold text-gray-900">Sarah Johnson</div>
                 <div class="text-sm text-gray-600">Marathon Runner</div>
                 <div class="flex items-center mt-1">
-                  <Trophy class="w-4 h-4 text-primary-600 mr-1" />
-                  <span class="text-sm text-primary-600 font-medium">2:58:32 Marathon PR</span>
+                  <Trophy class="w-4 h-4 text-yellow-600 mr-1" />
+                  <span class="text-sm text-yellow-600 font-medium">2:58:32 Marathon PR</span>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Featured Story 2 -->
-          <div class="bg-gradient-to-br from-accent-50 to-accent-100 rounded-2xl p-8">
+          <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8">
             <div class="flex items-center mb-6">
-              <Quote class="w-8 h-8 text-accent-600 mr-3" />
+              <Quote class="w-8 h-8 text-gray-800 mr-3" />
               <div class="flex">
                 {Array.from({ length: 5 }).map(() => (
                   <Star class="w-5 h-5 text-yellow-400 fill-current" />
@@ -85,8 +85,8 @@ import { Star, Quote, Trophy, Clock, Target } from 'lucide-react';
                 <div class="font-semibold text-gray-900">Mike Chen</div>
                 <div class="text-sm text-gray-600">5K Specialist</div>
                 <div class="flex items-center mt-1">
-                  <Clock class="w-4 h-4 text-accent-600 mr-1" />
-                  <span class="text-sm text-accent-600 font-medium">17:45 5K PR</span>
+                  <Clock class="w-4 h-4 text-gray-800 mr-1" />
+                  <span class="text-sm text-gray-800 font-medium">17:45 5K PR</span>
                 </div>
               </div>
             </div>
@@ -256,17 +256,17 @@ import { Star, Quote, Trophy, Clock, Target } from 'lucide-react';
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
-                <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" />
+                <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 transition-colors" />
               </div>
               <div>
                 <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
-                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" />
+                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 transition-colors" />
               </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label for="program" class="block text-sm font-medium text-gray-700 mb-2">Program Completed</label>
-                <select id="program" name="program" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors">
+                <select id="program" name="program" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 transition-colors">
                   <option value="">Select program</option>
                   <option value="5k">5K Speed Program</option>
                   <option value="half-marathon">Half Marathon Program</option>
@@ -279,12 +279,12 @@ import { Star, Quote, Trophy, Clock, Target } from 'lucide-react';
               </div>
               <div>
                 <label for="achievement" class="block text-sm font-medium text-gray-700 mb-2">Your Achievement</label>
-                <input type="text" id="achievement" name="achievement" placeholder="e.g., Sub-3 hour marathon, 5K PR" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" />
+                <input type="text" id="achievement" name="achievement" placeholder="e.g., Sub-3 hour marathon, 5K PR" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 transition-colors" />
               </div>
             </div>
             <div>
               <label for="rating" class="block text-sm font-medium text-gray-700 mb-2">Overall Rating</label>
-              <select id="rating" name="rating" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors">
+              <select id="rating" name="rating" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 transition-colors">
                 <option value="">Rate your experience</option>
                 <option value="5">5 Stars - Excellent</option>
                 <option value="4">4 Stars - Very Good</option>
@@ -295,16 +295,16 @@ import { Star, Quote, Trophy, Clock, Target } from 'lucide-react';
             </div>
             <div>
               <label for="story" class="block text-sm font-medium text-gray-700 mb-2">Your Story</label>
-              <textarea id="story" name="story" rows="6" placeholder="Tell us about your journey, challenges overcome, and how Run4PRs helped you achieve your goals..." required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors resize-none"></textarea>
+              <textarea id="story" name="story" rows="6" placeholder="Tell us about your journey, challenges overcome, and how Run4PRs helped you achieve your goals..." required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 transition-colors resize-none"></textarea>
             </div>
             <div class="flex items-center">
-              <input type="checkbox" id="consent" name="consent" required class="rounded border-gray-300 text-primary-600 focus:ring-primary-500" />
+              <input type="checkbox" id="consent" name="consent" required class="rounded border-gray-300 text-yellow-600 focus:ring-yellow-500" />
               <label for="consent" class="ml-2 text-sm text-gray-700">
                 I consent to Run4PRs using my testimonial for marketing purposes
               </label>
             </div>
             <div class="text-center">
-              <button type="submit" class="inline-flex items-center px-8 py-4 bg-primary-600 text-white font-semibold rounded-xl hover:bg-primary-700 transition-colors">
+              <button type="submit" class="inline-flex items-center px-8 py-4 bg-yellow-500 text-white font-semibold rounded-xl hover:bg-yellow-600 transition-colors">
                 Submit Your Story
               </button>
             </div>
